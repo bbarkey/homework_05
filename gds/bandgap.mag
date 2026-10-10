@@ -1,0 +1,9 @@
+magic
+tech sky130A
+magscale 1 2
+timestamp 1791675685
+use bandgap_m1  bandgap_m1_0
+timestamp 1791675685
+transform 0 1 865 -1 0 2249
+box -65 -33 1559 1205
+<< end >>

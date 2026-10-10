@@ -1,0 +1,74 @@
+** sch_path: /home/bbarkey/Documents/ECE_5120/homework_05/xschem/bandgap_x_tb.sch
+**.subckt bandgap_x_tb
+x1 Vref bandgap_x
+Vdd VDD 0 3.3
+C1 Vref 0 100n
+**** begin user architecture code
+
+.optionw nflag=1
+.save all
+.control
+tran 10n 10u
+plot V(Vref) title 'Vref vs time'
+dc VDD 3.0 3.5 0.1
+plot V(Vref) vs V(VDD) title 'Vref vs Vdd'
+dc VDD 3.0 3.5 0.1 TEMP -40 40 10
+plot V(Vref) vs V(VDD) title 'Vref vs Vdd vs Temp'
+dc TEMP -40 40 10
+plot V(Vref) title 'Vref vs Temp at VDD=3.3'
+.endc
+
+
+** opencircuitdesign pdks install
+.lib /home/bbarkey/.ciel/sky130A/libs.tech/combined/sky130.lib.spice tt
+
+**** end user architecture code
+**.ends
+
+* expanding   symbol:  bandgap_x.sym # of pins=1
+** sym_path: /home/bbarkey/Documents/ECE_5120/homework_05/xschem/bandgap_x.sym
+** sch_path: /home/bbarkey/Documents/ECE_5120/homework_05/xschem/bandgap_x.sch
+.subckt bandgap_x Vref
+*.opin Vref
+XM2 net3 net14 net1 VDD sky130_fd_pr__pfet_g5v0d10v5 L=1 W=20 nf=1 ad=5.8 as=5.8 pd=40.58 ps=40.58 nrd=0.0145 nrs=0.0145 sa=0 sb=0
++ sd=0 mult=1
+XM1 net2 net12 net1 VDD sky130_fd_pr__pfet_g5v0d10v5 L=1 W=20 nf=1 ad=5.8 as=5.8 pd=40.58 ps=40.58 nrd=0.0145 nrs=0.0145 sa=0 sb=0
++ sd=0 mult=1
+XM3 net2 net3 0 0 sky130_fd_pr__nfet_g5v0d10v5 L=1 W=20 nf=1 ad=5.8 as=5.8 pd=40.58 ps=40.58 nrd=0.0145 nrs=0.0145 sa=0 sb=0 sd=0
++ mult=1
+XM4 net3 net3 0 0 sky130_fd_pr__nfet_g5v0d10v5 L=1 W=20 nf=1 ad=5.8 as=5.8 pd=40.58 ps=40.58 nrd=0.0145 nrs=0.0145 sa=0 sb=0 sd=0
++ mult=1
+XM5 net6 net6 VDD VDD sky130_fd_pr__pfet_g5v0d10v5 L=1 W=1 nf=1 ad=0.29 as=0.29 pd=2.58 ps=2.58 nrd=0.29 nrs=0.29 sa=0 sb=0 sd=0
++ mult=1
+XM6 net6 Vref net7 0 sky130_fd_pr__nfet_g5v0d10v5 L=1 W=5 nf=1 ad=1.45 as=1.45 pd=10.58 ps=10.58 nrd=0.058 nrs=0.058 sa=0 sb=0
++ sd=0 mult=1
+XM7a net5 net5 net8 0 sky130_fd_pr__nfet_g5v0d10v5 L=20 W=0.5 nf=1 ad=0.145 as=0.145 pd=1.58 ps=1.58 nrd=0.58 nrs=0.58 sa=0 sb=0
++ sd=0 mult=1
+XM8 net5 net6 VDD VDD sky130_fd_pr__pfet_g5v0d10v5 L=1 W=1 nf=1 ad=0.29 as=0.29 pd=2.58 ps=2.58 nrd=0.29 nrs=0.29 sa=0 sb=0 sd=0
++ mult=1
+XM9 net5 Vref net4 0 sky130_fd_pr__nfet_g5v0d10v5 L=1 W=20 nf=1 ad=5.8 as=5.8 pd=40.58 ps=40.58 nrd=0.0145 nrs=0.0145 sa=0 sb=0
++ sd=0 mult=1
+XM10 net4 net2 0 0 sky130_fd_pr__nfet_g5v0d10v5 L=1 W=20 nf=1 ad=5.8 as=5.8 pd=40.58 ps=40.58 nrd=0.0145 nrs=0.0145 sa=0 sb=0 sd=0
++ mult=1
+XM11 net1 net6 VDD VDD sky130_fd_pr__pfet_g5v0d10v5 L=1 W=1 nf=1 ad=0.29 as=0.29 pd=2.58 ps=2.58 nrd=0.29 nrs=0.29 sa=0 sb=0 sd=0
++ mult=1
+XM12 Vref net5 VDD VDD sky130_fd_pr__pfet_g5v0d10v5 L=0.5 W=20 nf=1 ad=5.8 as=5.8 pd=40.58 ps=40.58 nrd=0.0145 nrs=0.0145 sa=0
++ sb=0 sd=0 mult=1
+XR1 net14 Vref 0 sky130_fd_pr__res_high_po_0p35 L=22 mult=1
+XR2 net12 Vref 0 sky130_fd_pr__res_high_po_0p35 L=22 mult=1
+XR3 net13 net12 0 sky130_fd_pr__res_high_po_0p35 L=3 mult=1
+XR4 0 net7 0 sky130_fd_pr__res_high_po_0p35 L=44 mult=1
+XQ1 0 0 net13 sky130_fd_pr__pnp_05v5_W3p40L3p40 m=24 mult=24
+XQ2 0 0 net14 sky130_fd_pr__pnp_05v5_W3p40L3p40 m=1 mult=1
+XM7b net8 net5 net9 0 sky130_fd_pr__nfet_g5v0d10v5 L=20 W=0.5 nf=1 ad=0.145 as=0.145 pd=1.58 ps=1.58 nrd=0.58 nrs=0.58 sa=0 sb=0
++ sd=0 mult=1
+XM7c net9 net5 net10 0 sky130_fd_pr__nfet_g5v0d10v5 L=20 W=0.5 nf=1 ad=0.145 as=0.145 pd=1.58 ps=1.58 nrd=0.58 nrs=0.58 sa=0 sb=0
++ sd=0 mult=1
+XM7d net10 net5 net11 0 sky130_fd_pr__nfet_g5v0d10v5 L=20 W=0.5 nf=1 ad=0.145 as=0.145 pd=1.58 ps=1.58 nrd=0.58 nrs=0.58 sa=0 sb=0
++ sd=0 mult=1
+XM7e net11 net5 0 0 sky130_fd_pr__nfet_g5v0d10v5 L=20 W=0.5 nf=1 ad=0.145 as=0.145 pd=1.58 ps=1.58 nrd=0.58 nrs=0.58 sa=0 sb=0
++ sd=0 mult=1
+.ends
+
+.GLOBAL VDD
+.end

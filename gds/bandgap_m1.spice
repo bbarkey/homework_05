@@ -1,0 +1,8 @@
+* SPICE3 file created from bandgap_m1.ext - technology: sky130A
+
+X0 D G S B sky130_fd_pr__pfet_01v8 ad=0.58 pd=4.29 as=0.58 ps=4.29 w=4 l=1
+X1 S G D B sky130_fd_pr__pfet_01v8 ad=1.16 pd=8.58 as=0.58 ps=4.29 w=4 l=1
+X2 S G D B sky130_fd_pr__pfet_01v8 ad=0.58 pd=4.29 as=0.58 ps=4.29 w=4 l=1
+X3 S G D B sky130_fd_pr__pfet_01v8 ad=0.58 pd=4.29 as=1.16 ps=8.58 w=4 l=1
+X4 D G S B sky130_fd_pr__pfet_01v8 ad=0.58 pd=4.29 as=0.58 ps=4.29 w=4 l=1
+C0 B VSUBS 7.0007f
