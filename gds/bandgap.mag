@@ -1,7 +1,7 @@
 magic
 tech sky130A
 magscale 1 2
-timestamp 1792276746
+timestamp 1792281423
 use bandgap_m1  bandgap_m1_0
 timestamp 1792274610
 transform 0 -1 2081 1 0 691
@@ -10,6 +10,14 @@ use bandgap_m1  bandgap_m1_1
 timestamp 1792274610
 transform 0 1 2069 1 0 691
 box -95 -89 1653 1305
+use bandgap_m3  bandgap_m3_0
+timestamp 1792280365
+transform 0 -1 3253 1 0 -1243
+box -65 -65 1627 1251
+use bandgap_m3  bandgap_m3_1
+timestamp 1792280365
+transform 0 1 881 1 0 -1243
+box -65 -65 1627 1251
 use sky130_fd_pr__pfet_g5v0d10v5_CEYAGG  sky130_fd_pr__pfet_g5v0d10v5_CEYAGG_0
 timestamp 1792276746
 transform 0 1 2112 -1 0 3591
