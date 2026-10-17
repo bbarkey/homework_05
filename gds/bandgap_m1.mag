@@ -1,4 +1,24 @@
 magic
 tech sky130A
-timestamp 1792273759
+magscale 1 2
+timestamp 1792274610
+<< locali >>
+rect 1544 486 1572 686
+<< metal1 >>
+rect 668 1194 910 1224
+rect 1238 1056 1442 1142
+rect 666 -8 1026 20
+use sky130_fd_pr__pfet_g5v0d10v5_P62BBU  sky130_fd_pr__pfet_g5v0d10v5_P62BBU_0
+timestamp 1792274610
+transform 1 0 779 0 1 608
+box -874 -697 874 697
+<< labels >>
+flabel metal1 766 1210 766 1210 0 FreeSans 800 0 0 0 D
+port 0 nsew
+flabel metal1 1334 1106 1334 1106 0 FreeSans 800 0 0 0 G
+port 1 nsew
+flabel metal1 778 4 778 4 0 FreeSans 800 0 0 0 S
+port 2 nsew
+flabel locali 1558 598 1558 598 0 FreeSans 800 0 0 0 B
+port 3 nsew
 << end >>
