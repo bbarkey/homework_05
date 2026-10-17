@@ -1,14 +1,4 @@
 magic
 tech sky130A
-magscale 1 2
-timestamp 1791675685
-<< locali >>
-rect -30 514 4 654
-use sky130_fd_pr__pfet_01v8_YPBVJV  sky130_fd_pr__pfet_01v8_YPBVJV_0
-timestamp 1791675685
-transform 1 0 747 0 1 586
-box -812 -619 812 619
-<< labels >>
-flabel locali -12 586 -12 586 0 FreeSans 800 0 0 0 B
-port 3 nsew
+timestamp 1792273759
 << end >>
