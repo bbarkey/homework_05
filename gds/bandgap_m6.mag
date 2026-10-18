@@ -1,0 +1,9 @@
+magic
+tech sky130A
+magscale 1 2
+timestamp 1792283412
+use sky130_fd_pr__nfet_g5v0d10v5_98BQ98  sky130_fd_pr__nfet_g5v0d10v5_98BQ98_0
+timestamp 1792283412
+transform 0 1 685 -1 0 273
+box -330 -758 330 758
+<< end >>
