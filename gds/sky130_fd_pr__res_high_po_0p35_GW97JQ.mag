@@ -1,0 +1,71 @@
+magic
+tech sky130A
+magscale 1 2
+timestamp 1792530424
+<< pwell >>
+rect -699 -886 699 886
+<< psubdiff >>
+rect -663 816 -567 850
+rect 567 816 663 850
+rect -663 754 -629 816
+rect 629 754 663 816
+rect -663 -816 -629 -754
+rect 629 -816 663 -754
+rect -663 -850 -567 -816
+rect 567 -850 663 -816
+<< psubdiffcont >>
+rect -567 816 567 850
+rect -663 -754 -629 754
+rect 629 -754 663 754
+rect -567 -850 567 -816
+<< xpolycontact >>
+rect -533 -720 -463 -288
+rect 463 288 533 720
+<< ppolyres >>
+rect -533 650 -297 720
+rect -533 -288 -463 650
+rect -367 -650 -297 650
+rect -201 650 35 720
+rect -201 -650 -131 650
+rect -367 -720 -131 -650
+rect -35 -650 35 650
+rect 131 650 367 720
+rect 131 -650 201 650
+rect -35 -720 201 -650
+rect 297 -650 367 650
+rect 463 -650 533 288
+rect 297 -720 533 -650
+<< locali >>
+rect -663 816 -567 850
+rect 567 816 663 850
+rect -663 754 -629 816
+rect 629 754 663 816
+rect -663 -816 -629 -754
+rect 629 -816 663 -754
+rect -663 -850 -567 -816
+rect 567 -850 663 -816
+<< viali >>
+rect 479 305 517 702
+rect -517 -702 -479 -305
+<< metal1 >>
+rect 473 702 523 714
+rect 473 305 479 702
+rect 517 305 523 702
+rect 473 293 523 305
+rect -523 -305 -473 -293
+rect -523 -702 -517 -305
+rect -479 -702 -473 -305
+rect -523 -714 -473 -702
+<< labels >>
+rlabel psubdiffcont 0 -833 0 -833 0 B
+port 1 nsew
+rlabel xpolycontact -498 -685 -498 -685 0 R1
+port 2 nsew
+rlabel xpolycontact 498 685 498 685 0 R2
+port 3 nsew
+<< properties >>
+string FIXED_BBOX -646 -833 646 833
+string gencell sky130_fd_pr__res_high_po_0p35
+string library sky130
+string parameters w 0.35 l 7.2 m 1 nx 7 wmin 0.350 lmin 0.50 class resistor rho 319.8 val 49.083k dummy 0 dw 0.0 term 194.82 sterm 0.0 caplen 0 guard 1 glc 1 grc 1 gtc 1 gbc 1 compatible {sky130_fd_pr__res_high_po_0p35  sky130_fd_pr__res_high_po_0p69 sky130_fd_pr__res_high_po_1p41  sky130_fd_pr__res_high_po_2p85 sky130_fd_pr__res_high_po_5p73} snake 1 full_metal 1 wmax 0.350 vias 1 n_guard 0 hv_guard 0 viagb 0 viagt 0 viagl 0 viagr 0 doports 1
+<< end >>
